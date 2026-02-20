@@ -46,7 +46,7 @@ Done — the extension is active.
 
 Done — the extension is active.
 
-> **Note for Firefox:** Temporary add-ons are removed when Firefox restarts. For a permanent install, Firefox Android users can use [this guide](https://www.mozilla.org/en-US/firefox/developer/
+> **Note for Firefox:** Temporary add-ons are removed when Firefox restarts. For a permanent install, Firefox Android users can use [this guide](https://extensionworkshop.com/documentation/develop/developing-extensions-for-firefox-for-android/
 ), and desktop users can look into [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) which supports permanent unpacked extensions.
 
 ---
