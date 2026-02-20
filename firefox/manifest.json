@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "ABB Magnet",
+  "version": "2.1",
+  "description": "Auto-detects torrent hashes on AudioBookBay and launches magnet links directly to your client. No login required.",
+  "permissions": [
+    "activeTab",
+    "https://audiobookbay.lu/*",
+    "https://audiobookbay.se/*",
+    "https://audiobookbay.is/*",
+    "https://audiobookbay.fi/*",
+    "https://audiobookbay.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://audiobookbay.lu/*",
+        "https://audiobookbay.se/*",
+        "https://audiobookbay.is/*",
+        "https://audiobookbay.fi/*",
+        "https://audiobookbay.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "abb-magnet@arrcee76",
+      "strict_min_version": "57.0"
+    }
+  }
+}

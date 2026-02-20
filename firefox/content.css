@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap');
+
+#abb-magnet-banner {
+  position: fixed;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999999;
+  background: #111214;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 320px;
+  max-width: 480px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04);
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  transition: top 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#abb-magnet-banner.visible {
+  top: 16px;
+}
+
+#abb-magnet-banner.hiding {
+  top: -120px;
+  transition: top 0.3s ease-in;
+}
+
+#abb-banner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#abb-banner-label {
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #b8f03a;
+}
+
+#abb-banner-title {
+  font-size: 11px;
+  color: #d0d0d0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 340px;
+  line-height: 1.4;
+}
+
+#abb-banner-hash {
+  font-size: 10px;
+  color: #555;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#abb-banner-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#abb-btn-get {
+  flex: 1;
+  padding: 9px 14px;
+  background: #b8f03a;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 10px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+#abb-btn-get:hover {
+  opacity: 0.88;
+}
+
+#abb-btn-get:active {
+  transform: scale(0.97);
+}
+
+#abb-btn-cancel {
+  padding: 9px 14px;
+  background: transparent;
+  color: #555;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+#abb-btn-cancel:hover {
+  color: #e05555;
+  border-color: #3a2020;
+}
+
+#abb-banner-confirm {
+  font-size: 10px;
+  color: #b8f03a;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2px 0;
+  display: none;
+}
