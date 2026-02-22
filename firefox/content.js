@@ -74,9 +74,11 @@ function injectBanner(data) {
     <div id="abb-banner-hash">${data.hash}</div>
     <div id="abb-banner-actions">
       <button id="abb-btn-get">Get Magnet</button>
+      <button id="abb-btn-copy">Copy</button>
       <button id="abb-btn-cancel">Cancel</button>
     </div>
     <div id="abb-banner-confirm">✓ Magnet sent to client</div>
+    <div id="abb-banner-copied">✓ Copied to clipboard</div>
   `;
 
   document.body.appendChild(banner);
@@ -96,6 +98,15 @@ function injectBanner(data) {
 
     // Slide away after 2s
     setTimeout(() => dismissBanner(banner), 2000);
+  });
+
+  // Copy magnet to clipboard
+  document.getElementById('abb-btn-copy').addEventListener('click', () => {
+    navigator.clipboard.writeText(magnet).then(() => {
+      const copied = document.getElementById('abb-banner-copied');
+      copied.style.display = 'block';
+      setTimeout(() => { copied.style.display = 'none'; }, 2000);
+    });
   });
 
   // Cancel

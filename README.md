@@ -6,9 +6,13 @@ A free browser extension for Chrome, Edge, and Firefox that automatically detect
 
 ## What it does
 
-When you open any audiobook page on AudioBookBay, a small banner automatically appears at the top of the page showing the book title and two buttons — **Get Magnet** and **Cancel**.
+When you open any audiobook page on AudioBookBay, a small banner automatically appears at the top of the page showing the book title and three buttons:
 
-Hit **Get Magnet** and it fires straight to qBittorrent (or whatever torrent client you use). That's it. No messing around with the site's broken magnet links that demand a login, no copying hashes manually.
+- **Get Magnet** — fires the magnet link straight to your torrent client (qBittorrent etc.)
+- **Copy** — copies the full magnet URI to your clipboard, useful for remote clients and seedboxes
+- **Cancel** — dismisses the banner
+
+No messing around with the site's broken magnet links that demand a login, no copying hashes manually.
 
 ---
 
@@ -32,7 +36,7 @@ Done — the extension is active.
 
 ---
 
-### Firefox
+### Firefox (Desktop)
 
 1. **Download and unzip** — same as above (green Code button → Download ZIP → Extract All).
 
@@ -46,7 +50,13 @@ Done — the extension is active.
 
 Done — the extension is active.
 
-> **Note for Firefox:** Temporary add-ons are removed when Firefox restarts. For a permanent install, Firefox Android users can use [this guide](https://support.mozilla.org/en-US/kb/extended-add-on-support-android), and desktop users can look into [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) which supports permanent unpacked extensions.
+> **Note:** Firefox removes temporary add-ons when it restarts. To make it permanent, install [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) and follow the same steps — Developer Edition allows permanent unpacked extensions.
+
+---
+
+### Firefox (Android)
+
+Firefox on Android supports extensions through the official add-ons store. A store listing is planned for a future release. In the meantime, [Firefox Nightly](https://play.google.com/store/apps/details?id=org.mozilla.fenix) on Android supports loading custom extensions — see [Mozilla's guide](https://extensionworkshop.com/documentation/develop/developing-extensions-for-firefox-for-android/) for instructions.
 
 ---
 
@@ -81,7 +91,13 @@ Make sure the extension is enabled. Try refreshing the ABB page.
 Make sure qBittorrent is set as the default handler for magnet links — see the optional step above.
 
 **Firefox — extension disappeared after restart**
-Firefox removes temporary add-ons on restart. Re-load it via `about:debugging` or use Firefox Developer Edition for a permanent install.
+Firefox removes temporary add-ons on restart. Re-load it via `about:debugging` or switch to Firefox Developer Edition for a permanent install.
+
+---
+
+## Supported domains
+
+Works on all AudioBookBay domains including audiobookbay.lu, audiobookbay.se, audiobookbay.is, audiobookbay.fi, and audiobookbay.com.
 
 ---
 

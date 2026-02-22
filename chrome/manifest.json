@@ -1,24 +1,34 @@
 {
   "manifest_version": 3,
   "name": "ABB Magnet",
-  "version": "2.1",
-  "description": "Auto-detects torrent hashes on AudioBookBay and launches magnet links directly to your client. No login required.",
+  "version": "2.0",
+  "description": "Auto-detects torrent hashes on AudioBookBay and launches magnet links directly to your client.",
   "permissions": ["activeTab", "scripting"],
   "host_permissions": [
-    "https://audiobookbay.lu/*",
-    "https://audiobookbay.se/*",
-    "https://audiobookbay.is/*",
-    "https://audiobookbay.fi/*",
-    "https://audiobookbay.com/*"
+    "*://audiobookbay.lu/*",
+    "*://audiobookbay.se/*",
+    "*://audiobookbay.is/*",
+    "*://audiobookbay.fi/*",
+    "*://audiobookbay.com/*",
+    "*://www.audiobookbay.lu/*",
+    "*://www.audiobookbay.se/*",
+    "*://www.audiobookbay.is/*",
+    "*://www.audiobookbay.fi/*",
+    "*://www.audiobookbay.com/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://audiobookbay.lu/*",
-        "https://audiobookbay.se/*",
-        "https://audiobookbay.is/*",
-        "https://audiobookbay.fi/*",
-        "https://audiobookbay.com/*"
+        "*://audiobookbay.lu/*",
+        "*://audiobookbay.se/*",
+        "*://audiobookbay.is/*",
+        "*://audiobookbay.fi/*",
+        "*://audiobookbay.com/*",
+        "*://www.audiobookbay.lu/*",
+        "*://www.audiobookbay.se/*",
+        "*://www.audiobookbay.is/*",
+        "*://www.audiobookbay.fi/*",
+        "*://www.audiobookbay.com/*"
       ],
       "js": ["content.js"],
       "css": ["content.css"],

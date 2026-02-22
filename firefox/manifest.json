@@ -5,20 +5,30 @@
   "description": "Auto-detects torrent hashes on AudioBookBay and launches magnet links directly to your client. No login required.",
   "permissions": [
     "activeTab",
-    "https://audiobookbay.lu/*",
-    "https://audiobookbay.se/*",
-    "https://audiobookbay.is/*",
-    "https://audiobookbay.fi/*",
-    "https://audiobookbay.com/*"
+    "*://audiobookbay.lu/*",
+    "*://audiobookbay.se/*",
+    "*://audiobookbay.is/*",
+    "*://audiobookbay.fi/*",
+    "*://audiobookbay.com/*",
+    "*://www.audiobookbay.lu/*",
+    "*://www.audiobookbay.se/*",
+    "*://www.audiobookbay.is/*",
+    "*://www.audiobookbay.fi/*",
+    "*://www.audiobookbay.com/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://audiobookbay.lu/*",
-        "https://audiobookbay.se/*",
-        "https://audiobookbay.is/*",
-        "https://audiobookbay.fi/*",
-        "https://audiobookbay.com/*"
+        "*://audiobookbay.lu/*",
+        "*://audiobookbay.se/*",
+        "*://audiobookbay.is/*",
+        "*://audiobookbay.fi/*",
+        "*://audiobookbay.com/*",
+        "*://www.audiobookbay.lu/*",
+        "*://www.audiobookbay.se/*",
+        "*://www.audiobookbay.is/*",
+        "*://www.audiobookbay.fi/*",
+        "*://www.audiobookbay.com/*"
       ],
       "js": ["content.js"],
       "css": ["content.css"],

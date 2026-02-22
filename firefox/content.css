@@ -92,6 +92,34 @@
   transform: scale(0.97);
 }
 
+#abb-btn-copy {
+  padding: 9px 14px;
+  background: transparent;
+  color: #b8f03a;
+  border: 1px solid #2a3a00;
+  border-radius: 10px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+#abb-btn-copy:hover {
+  background: #1a2a00;
+}
+
+#abb-banner-copied {
+  font-size: 10px;
+  color: #b8f03a;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2px 0;
+  display: none;
+}
+
 #abb-btn-cancel {
   padding: 9px 14px;
   background: transparent;
